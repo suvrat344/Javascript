@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+        1. Create an array to hold an inventory of store items.
+        2. Create three items, each having the properties of name, model, cost, and quantity.
+        3. Add all three objects to the main array using an array method, and then log the inventory array to the console.
+        4. Access the quantity element of your third item, and log it to the console. 
+        Experiment by adding and accessing more elements within your data structure
+      */
+
+      const inventory = [];
+      const item1 = {
+                      name:"Pen",
+                      model:"Link",
+                      cost:5,
+                      quantity:4
+                    };
+      const item2 = {
+                      name:"Pencil",
+                      model:"Natraj",
+                      cost:10,
+                      quantity:5
+                    };
+      const item3 = {
+                      name:"Copy",
+                      model:"Shivalal",
+                      cost:25,
+                      quantity:6
+                    };
+      inventory.push(item1,item2,item3);
+      console.log(inventory);
+      console.log(inventory[2]["quantity"]);
+    </script>
+  </body>
+</html>

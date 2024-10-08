@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+         Set values for height in inches and weight in pounds, then convert the values to centimeters and kilos, outputting the results to the console:
+          • 1 inch is equal to 2.54 cm
+          • 2.2046 pounds is equal to 1 kilo
+         Output the results. Then, calculate and log the BMI: this is equal to weight (in kilos) divided by squared height (in meters). Output the results to the console
+      */
+
+      let heightInch = 160;
+      let weightPound = 120;
+
+      console.log(`BMI = ${weightPound/(2.2046 * (heightInch * 2.54 * 0.01)**2)}`);
+
+    </script>
+  </body>
+</html>
