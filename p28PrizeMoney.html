@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+        1. Create a variable called prize and use a prompt to ask the user to set the value by selecting a number between 0 and 10
+        2. Convert the prompt response to a number data type
+        3. Create a variable to use for the output message containing the value "My Selection: "
+        4. Using the switch statement (and creativity), provide a response back regarding a prize that is awarded depending on what number is selected
+        5. Use the switch break to add combined results for prizes
+        6. Output the message back to the user by concatenating your prize variable strings and the output message string
+      */
+
+      let selection = parseInt(prompt("Select value between 0 and 10"));
+      let message = "My Selection: ";
+      let prize = "";
+      switch(selection)
+      {
+        case 0:
+          prize = "Got $0";
+          break;
+        case 1:
+          prize = "Got $10";
+          break;
+        case 2:
+          prize = "Got $20";
+          break;
+        case 3:
+          prize = "Got $30";
+          break;
+        case 4:
+          prize = "Got $40";
+          break;
+        case 5:
+          prize = "Got $50";
+          break;
+        case 6:
+          prize = "Got $60";
+          break;
+        case 7:
+          prize = "Got $70";
+          break;
+        case 8:
+          prize = "Got $80";
+          break;
+        case 9:
+          prize = "Got $90";
+          break;
+        case 10:
+          prize = "Got $100";
+          break;
+        default:
+          prize = "Got Nothing";
+          break;
+    }
+    let output = message + selection + " and you " + prize;
+    console.log(output);
+    </script>
+  </body>
+</html>
