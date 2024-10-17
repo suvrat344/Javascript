@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+        1. Create an array of descriptive words.
+        2. Create a function that contains a prompt asking the user for a name.
+        3. Select a random value from the array using Math.random.
+        4. Output into the console the prompt value and the randomly selected array value.
+        5. Invoke the function
+      */
+
+      const adj = ["super","wonderful","bad","angry","careful"];
+
+      function imputed()
+      {
+        let name = prompt("Enter name");
+        let value = adj[Math.floor(Math.random()*adj.length)]
+        console.log(`Actual Name is ${name} and imputed name is ${value}`);
+      }
+
+      imputed()
+    </script>
+  </body>
+</html>

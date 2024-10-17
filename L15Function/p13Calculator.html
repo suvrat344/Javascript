@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+        Create a basic calculator that takes two numbers and one string value indicating an operation. If the operation equals add, the two numbers should be added. If the operation equals subtract, the two numbers should be subtracted from one another. If there is no option specified, the value of the option should be add.The result of this function needs to be logged. Test your function by invoking it with different operators and no operator specified.
+        1. Set up two variables containing number values.
+        2. Set up a variable to hold an operator, either + or -.
+        3. Create a function that retrieves the two values and the operator string value within its parameters. Use those values with a condition to check if the operator is + or -, and add or subtract the values accordingly (remember if not presented with a valid operator, the function should default to addition).
+        4. Within console.log(), call the function using your variables and output the response to the console.
+        5. Update the operator value to be the other operator type—either plus or minus—and call to the function again with the new updated arguments
+      */
+
+      function calculator(num1,num2,operator="+")
+      {
+        console.log(eval(`${num1} ${operator} ${num2}`));
+      }
+
+      let num1 = 25;
+      let num2 = 35;
+      let operator = "/";
+      calculator(num1,num2,operator);
+
+    </script>
+  </body>
+</html>

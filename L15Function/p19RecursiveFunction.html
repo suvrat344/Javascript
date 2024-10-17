@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script>
+      /*
+        Create a recursive function that counts up to 10. Invoke the function with different start numbers as the arguments that are passed into the function. The function should run until the value is greater than 10.
+      */
+
+      function countDown(num)
+      {
+        console.log(num);
+        if(num < 10)
+        {
+          return countDown(num + 1);
+        }
+        return;
+      }
+
+      countDown(0);
+    </script>
+  </body>
+</html>
